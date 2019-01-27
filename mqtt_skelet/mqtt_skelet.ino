@@ -7,13 +7,20 @@
 // by Joël Gähwiler
 // https://github.com/256dpi/arduino-mqtt
 
+
+
+//Inkluderer de anvendte libraries
 #include <ESP8266WiFi.h>
 #include <MQTTClient.h>
 
+//definere wifi navn
 const char ssid[] = "ddiot";
+//definere wifi kode
 const char pass[] = "ddlabiotworkshop";
 
+//definerer 'brugernavnet' fra shiftr
 const char user[] = "";
+//definerer token/kode fra shiftr
 const char token[] = "";
 
 WiFiClient net;
