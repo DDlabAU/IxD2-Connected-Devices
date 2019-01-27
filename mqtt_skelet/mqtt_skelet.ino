@@ -13,16 +13,16 @@
 #include <ESP8266WiFi.h>
 #include <MQTTClient.h>
 
-//definere wifi navn
+// indtast wifi navn
 const char ssid[] = "ddiot";
-//definere wifi kode
+// indtast wifi kode
 const char pass[] = "ddlabiotworkshop";
 
-//definerer 'brugernavnet' fra shiftr
+// indtast 'brugernavnet' fra shiftr
 const char user[] = "";
-//definerer token/kode fra shiftr
+// indtast token/kode fra shiftr
 const char token[] = "";
-
+// Deklarere variabler til MQTT og Net (Vi bruger til at forbinde til internettet og bruge mqtt)
 WiFiClient net;
 MQTTClient client;
 
@@ -34,16 +34,15 @@ void connect();  // <- predefine connect() for setup()
 
 void setup() {
   Serial.begin(115200);
+  // Her starter vi WIFI og client
   WiFi.begin(ssid, pass);
-
-  // Note: Local domain names (e.g. "Computer.local" on OSX) are not supported by Arduino.
-  // You need to set the IP address directly.
   client.begin("broker.shiftr.io", net);
+  // når clienten modtager en besked, skal den sende beskeden videre til funktionen 8messageReceived)
   client.onMessage(messageReceived);
-
+ // Forbinder til wifi og broker
   connect();
 }
-
+// Tjekker Wifi-status (skriver '...' indtil ESP'en er forbundet)
 void connect() {
   Serial.print("checking wifi...");
   while (WiFi.status() != WL_CONNECTED) {
@@ -56,31 +55,34 @@ void connect() {
     Serial.print(".");
     delay(1000);
   }
-
+// Skriver serielt når der er forbundet til internettet og broker
   Serial.println("\nconnected!");
-
+//Forbinder til den adresse som der skal læses beskeder fra
   client.subscribe("/hello");
+
+  //*Skal den her linje være med?*
   // client.unsubscribe("/hello");
 }
 
 void loop() {
   client.loop();
-  delay(10);  // <- fixes some issues with WiFi stability
+  delay(10);
 
   if (!client.connected()) {
     connect();
   }
-
-  publishMessage("/counter", String(count));
+//Skal denne linje være der?
+  //publishMessage("/counter", String(count));
   delay(500);
+  // Skriver på adressen(topic) '/hello' og sender beskeden(message) 'world'
   publishMessage("/hello", "world");
   delay(500);
 }
-
+//Deklarere funktionen for at sende beskeden til (topic,message)
 void publishMessage(String topic, String message){
   client.publish(topic, message);
 }
-
+// læser beskeder fra de subscribede topics (adresser)
 void messageReceived(String &topic, String &payload) {
   Serial.println("incoming: " + topic + " - " + payload);
 }
