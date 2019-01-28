@@ -6,7 +6,7 @@ var client;
 
 function setup() {
 
-  // MQTT TING
+  // MQTT TING START
   // -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
   client = mqtt.connect('mqtt://' + user + ':' + token + '@broker.shiftr.io', {
     clientId: 'p5js'
@@ -36,7 +36,7 @@ function setup() {
   });
 
   // -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
-  // MQTT SLUT
+  // MQTT TING SLUT
 
 
   createCanvas(windowWidth, windowHeight);
