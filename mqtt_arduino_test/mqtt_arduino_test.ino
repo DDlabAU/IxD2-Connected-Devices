@@ -10,11 +10,11 @@
 #include <ESP8266WiFi.h>
 #include <MQTTClient.h>
 
-const char ssid[] = "ddiot";
-const char pass[] = "ddlabiotworkshop";
+const char ssid[] = "ddlabwifi";
+const char pass[] = "balddbaldd";
 
-const char user[] = "try";
-const char token[] = "try";
+const char user[] = "db203c42";
+const char token[] = "856df45fc417f355";
 
 WiFiClient net;
 MQTTClient client;
@@ -43,7 +43,7 @@ void connect() {
   }
 
   Serial.print("\nconnecting...");
-  while (!client.connect("arduino", user, token)) {
+  while (!client.connect("sorenthemaster", user, token)) {
     Serial.print(".");
     delay(1000);
   }
