@@ -27,7 +27,7 @@ I lab'et anvender vi overvejende WeMos D1 mini, så det vil være den der refere
     * Den kan i finde under File -> Examples -> ESP8266 -> Blink
     * Husk at vælge det rigtige board: Tools -> Board -> WeMos D1 R2 &Mini
 
-
+![](wemos.png)
 
 # arduinointro
 
