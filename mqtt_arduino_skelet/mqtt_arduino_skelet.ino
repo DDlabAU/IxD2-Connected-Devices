@@ -23,14 +23,16 @@ const char user[] = "";
 // indtast token/kode fra shiftr
 const char token[] = "";
 // Deklarere variabler til MQTT og Net (Vi bruger til at forbinde til internettet og bruge mqtt)
+
+
 WiFiClient net;
 MQTTClient client;
 
-int count = 0;
 
-unsigned long lastMillis = 0;
 
-void connect();  // <- predefine connect() for setup()
+
+void connect();
+
 
 void setup() {
   Serial.begin(115200);
@@ -60,8 +62,7 @@ void connect() {
 //Forbinder til den adresse som der skal læses beskeder fra
   client.subscribe("/hello");
 
-  //*Skal den her linje være med?*
-  // client.unsubscribe("/hello");
+
 }
 
 void loop() {
@@ -71,9 +72,7 @@ void loop() {
   if (!client.connected()) {
     connect();
   }
-//Skal denne linje være der?
-  //publishMessage("/counter", String(count));
-  delay(500);
+
   // Skriver på adressen(topic) '/hello' og sender beskeden(message) 'world'
   publishMessage("/hello", "world");
   delay(500);
