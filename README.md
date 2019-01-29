@@ -53,3 +53,6 @@ Alle de følgende ting er rigtig gode, hvis ikke nødvendige, at kunne så snart
 * [Digital Input Pullup](https://www.arduino.cc/en/Tutorial/InputPullupSerial)
 * [Analog In Out Serial](https://www.arduino.cc/en/Tutorial/AnalogInOutSerial)
 
+# MQTT & Shiftr test
+
+Når vi tester shifter, bruger vi først https://shiftr.io/try. Her er der ikke et krav om at oprette hverken bruger eller eget namespace.
