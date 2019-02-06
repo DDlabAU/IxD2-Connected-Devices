@@ -36,10 +36,10 @@ Alle tutorials vi skal bruge i dag finder i på: [https://www.arduino.cc/en/Tuto
 
 ## Det basale
 Lav følgende tutorials i denne rækkefølge:  
-2. [Blink](https://www.arduino.cc/en/Tutorial/Blink)
-3. [Fade](https://www.arduino.cc/en/Tutorial/Fade)
-4. [Analog Read Serial](https://www.arduino.cc/en/Tutorial/AnalogReadSerial)
-5. [Digital Read Serial](https://www.arduino.cc/en/Tutorial/DigitalReadSerial)      
+1. [Blink](https://www.arduino.cc/en/Tutorial/Blink)
+2. [Fade](https://www.arduino.cc/en/Tutorial/Fade)
+3. [Analog Read Serial](https://www.arduino.cc/en/Tutorial/AnalogReadSerial)
+4. [Digital Read Serial](https://www.arduino.cc/en/Tutorial/DigitalReadSerial)      
    
    
    
