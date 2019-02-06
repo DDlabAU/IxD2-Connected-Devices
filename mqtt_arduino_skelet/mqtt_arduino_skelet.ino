@@ -14,7 +14,7 @@
 #include <MQTTClient.h>
 
 // indtast wifi navn
-const char ssid[] = "ddiot";
+const char ssid[] = "";
 // indtast wifi kode
 const char pass[] = "ddlabiotworkshop";
 
