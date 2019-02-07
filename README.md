@@ -58,3 +58,5 @@ Alle de følgende ting er rigtig gode, hvis ikke nødvendige, at kunne så snart
 # MQTT & Shiftr test
 
 Når vi tester shifter, bruger vi først https://shiftr.io/try. Her er der ikke et krav om at oprette hverken bruger eller eget namespace.
+
+Namespace doc: https://docs.google.com/document/d/1UnGFMI0EkqGscFvq-rxx2cL1nGQKRaQBu3SwivKcY3E/edit?usp=sharing
