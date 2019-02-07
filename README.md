@@ -29,6 +29,11 @@ I lab'et anvender vi overvejende WeMos D1 mini, så det vil være den der refere
 
 ![](wemos.png)
 
+ALT intern logik i WEMOS boards arbejder med 3.3V
+Tilpas modstande efter spænding vha. Ohms lov eller:
+http://led.linear1.org/1led.wiz
+
+
 # 3.3V Øvelser
 
 Alle tutorials vi skal bruge i dag finder i på: [https://www.arduino.cc/en/Tutorial/BuiltInExamples](https://www.arduino.cc/en/Tutorial/BuiltInExamples)
