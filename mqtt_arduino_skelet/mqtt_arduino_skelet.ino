@@ -16,7 +16,7 @@
 // indtast wifi navn
 const char ssid[] = "";
 // indtast wifi kode
-const char pass[] = "ddlabiotworkshop";
+const char pass[] = "";
 
 // indtast 'brugernavnet' fra shiftr
 const char user[] = "";
@@ -53,6 +53,7 @@ void connect() {
   }
 
   Serial.print("\nconnecting...");
+  // når klienten er forbundet giver den klient navn+usr+token
   while (!client.connect("arduino", user, token)){
     Serial.print(".");
     delay(1000);
@@ -60,7 +61,7 @@ void connect() {
 // Skriver serielt når der er forbundet til internettet og broker
   Serial.println("\nconnected!");
 //Forbinder til den adresse som der skal læses beskeder fra
-  client.subscribe("/hello");
+  client.subscribe("");
 
 
 }
@@ -73,8 +74,8 @@ void loop() {
     connect();
   }
 
-  // Skriver på adressen(topic) '/hello' og sender beskeden(message) 'world'
-  publishMessage("/hello", "world");
+  // Skriver på adressen(topic)  og sender beskeden(message)
+  publishMessage("", "");
   delay(500);
 }
 //Deklarere funktionen for at sende beskeden til (topic,message)
