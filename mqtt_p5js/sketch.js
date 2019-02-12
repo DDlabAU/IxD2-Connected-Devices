@@ -1,5 +1,5 @@
-var key = 'try'; // username
-var secret = 'try'; // password
+var shiftrKey = 'try'; // key / username
+var shiftrSecret = 'try'; // secret / password
 
 var client;
 
@@ -8,7 +8,7 @@ function setup() {
 
   // MQTT TING START
   // -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
-  client = mqtt.connect('mqtt://' + key + ':' + secret + '@broker.shiftr.io', {
+  client = mqtt.connect('mqtt://' + shiftrKey + ':' + shiftrSecret + '@broker.shiftr.io', {
     clientId: 'p5js'
   });
 
