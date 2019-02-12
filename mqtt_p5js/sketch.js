@@ -48,7 +48,7 @@ function draw() {
 
 // DEN HER FUNKTION KALDER VI NÅR VI VIL SENDE EN BESKED
 function publishMessage(topic, message){
-    client.publish(topic, message);
+    client.publish(String(topic), String(message));
 }
 
 // DEN HER FUNKTION SKYDER HVER GANG VI MODTAGER EN BESKED
