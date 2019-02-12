@@ -1,5 +1,5 @@
-var user = 'try';
-var token = 'try';
+var key = 'try'; // username
+var secret = 'try'; // password
 
 var client;
 
