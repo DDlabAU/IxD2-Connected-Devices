@@ -32,7 +32,7 @@ function setup() {
   // HER FORTÆLLER VI AT VI VIL MODTAGE BESKEDERNE I VORES FUNKTION: receiveData
   // -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
   client.on('message', function(topic, message) {
-    receiveData(topic, message);
+    messageReceived(topic, message);
   });
 
   // -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
@@ -47,12 +47,12 @@ function draw() {
 }
 
 // DEN HER FUNKTION KALDER VI NÅR VI VIL SENDE EN BESKED
-function publishData(topic, message){
+function publishMessage(topic, message){
     client.publish(topic, message);
 }
 
 // DEN HER FUNKTION SKYDER HVER GANG VI MODTAGER EN BESKED
-function receiveData(t, m){
+function messageReceived(t, m){
   var topic = t.toString();
   var message = m.toString();
 
