@@ -8,7 +8,7 @@ function setup() {
 
   // MQTT TING START
   // -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
-  client = mqtt.connect('mqtt://' + user + ':' + token + '@broker.shiftr.io', {
+  client = mqtt.connect('mqtt://' + key + ':' + secret + '@broker.shiftr.io', {
     clientId: 'p5js'
   });
 
