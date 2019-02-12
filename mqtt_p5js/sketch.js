@@ -18,7 +18,7 @@ function setup() {
 
     // HER SUBCRIBER VI TIL DE ADRESSER VI VIL LYTTE TIL
     // -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
-    client.subscribe('/DDLabESP/light');
+    client.subscribe('/hello');
     // client.unsubscribe('/example');
 
 
