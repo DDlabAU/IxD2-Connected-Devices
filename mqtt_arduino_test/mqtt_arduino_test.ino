@@ -13,8 +13,8 @@
 const char ssid[] = "ddiot";
 const char pass[] = "ddlabiotworkshop";
 
-const char user[] = "try";
-const char token[] = "try";
+const char key[] = "try";
+const char secret[] = "try";
 
 WiFiClient net;
 MQTTClient client;
@@ -43,7 +43,7 @@ void connect() {
   }
 
   Serial.print("\nconnecting...");
-  while (!client.connect("sorenthemaster", user, token)) {
+  while (!client.connect("sorenthemaster", key, secret)) {
     Serial.print(".");
     delay(1000);
   }

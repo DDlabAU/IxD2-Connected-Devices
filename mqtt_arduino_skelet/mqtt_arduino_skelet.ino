@@ -18,10 +18,10 @@ const char ssid[] = "";
 // indtast wifi kode
 const char pass[] = "";
 
-// indtast 'brugernavnet' fra shiftr
-const char user[] = "";
-// indtast token/kode fra shiftr
-const char token[] = "";
+// indtast 'key/username' fra shiftr
+const char key[] = "";
+// indtast secret/password fra shiftr
+const char secret[] = "";
 // Deklarere variabler til MQTT og Net (Vi bruger til at forbinde til internettet og bruge mqtt)
 
 
@@ -54,7 +54,7 @@ void connect() {
 
   Serial.print("\nconnecting...");
   // når klienten er forbundet giver den klient navn+usr+token
-  while (!client.connect("arduino", user, token)){
+  while (!client.connect("arduino", key, secret)){
     Serial.print(".");
     delay(1000);
   }
