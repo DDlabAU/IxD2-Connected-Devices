@@ -22,7 +22,7 @@ function setup() {
     // client.unsubscribe('/example');
   });
 
-  // HER FORTÆLLER VI AT VI VIL MODTAGE BESKEDERNE I VORES FUNKTION: receiveData
+  // HER FORTÆLLER VI AT VI VIL MODTAGE BESKEDERNE I VORES FUNKTION: messageReceived()
   // -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
   client.on('message', function(topic, message) {
     messageReceived(topic, message);
