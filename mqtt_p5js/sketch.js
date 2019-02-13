@@ -20,13 +20,6 @@ function setup() {
     // -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
     client.subscribe('/hello');
     // client.unsubscribe('/example');
-
-
-    // HVIS VI VIL PUBLISHE I FAST INTERVAL KAN VI SÆTTE DET OP HER
-    // -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
-    // setInterval(function(){
-    //   client.publish('/p5jsTest', 'testing 1..2..');
-    // }, 10000);
   });
 
   // HER FORTÆLLER VI AT VI VIL MODTAGE BESKEDERNE I VORES FUNKTION: receiveData
