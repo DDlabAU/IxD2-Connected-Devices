@@ -2,7 +2,7 @@
 
 #### Guide til ESP moduler
 Dette er DD Labs guide til hvordan man starter med at bruge den Arduino-kompatible WiFi-chip kaldet ESP. Denne chip eksisterer i mange former og i lab'et har vi følgende:
-* [WeMos D1 mini](https://wiki.wemos.cc/products:d1:d1_mini#technical_specs)
+* [WeMos D1 mini](https://docs.wemos.cc/en/latest/d1/d1_mini.html)
 * [Adafruit Feather Huzzar](https://learn.adafruit.com/adafruit-feather-huzzah-esp8266/overview)
 * [NodeMCU](http://www.nodemcu.com/index_en.html)
 * [Sparkfun ESP32 Thing](https://learn.sparkfun.com/tutorials/esp32-thing-hookup-guide) (der er endnu ikke en guide klar til denne)
